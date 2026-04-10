@@ -20,3 +20,23 @@ export default async function decorate(fieldDiv, fieldJson, parentElement, formI
   
   return fieldDiv;
 }
+
+
+import { createOptimizedPicture } from '../../../../scripts/aem.js';
+
+
+export default function decorate(element, fieldJson, container, formId) {
+
+element.classList.add('card');
+
+element.querySelectorAll('.radio-wrapper').forEach((radioWrapper) => {
+
+const image = createOptimizedPicture('https://main--afb--jalagari.aem.live/lab/images/media_14e602bb8ead2da119302beb16f79574bcce4995f.png', 'card-image');
+
+radioWrapper.appendChild(image);
+
+});
+
+return element;
+
+}
