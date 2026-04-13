@@ -1,0 +1,72 @@
+/* Upload component styles */
+  /* Add your custom styles here */
+/* Upload box ONLY (no outer wrapper styling) */
+.upload {
+  border: 2px dashed #0070f3;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+  background-color: #f0f4f8;
+  transition: all 0.3s ease;
+ 
+ 
+}
+ 
+/* Hover / drag effect */
+.upload:hover,
+.upload.dragover {
+  border-color: #005bb5;
+  background-color: #e6f2ff;
+}
+ 
+/* Hide default input */
+.upload input[type="file"] {
+  display: none;
+}
+ 
+/* Upload button (top) */
+.upload button {
+  background-color: #5c85c3;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+ 
+.upload button:hover {
+  background-color: #3f6fb5;
+}
+ 
+/* Drag text (below button) */
+.upload p {
+  margin-top: 15px;
+  color: #555;
+  font-size: 14px;
+}
+ 
+/* File name */
+.upload .file-name {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #333;
+}
+ 
+/* Error */
+.upload .error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+ 
+.upload .field-label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+  display: block;
+}
