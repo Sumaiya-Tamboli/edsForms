@@ -48,6 +48,6 @@
   background-color: #dbeafe;
 }
 
-.file-attachButton{
-  background-color: red !important;
+main .form .file-attachButton{
+  background: red !important;
 }
